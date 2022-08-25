@@ -21,12 +21,10 @@ body {
   transform: translate(-50%, -50%);
 }
 
-main .container {
-  display: block;
-}
 main .container,
 main .answer {
   position: relative;
+  display: block;
   background-color: hsl(213deg, 19%, 18%);
   border-radius: 10px;
   padding: 2em 2.5em;
@@ -94,7 +92,7 @@ main .answer .sumbit:active {
   color: hsl(25deg, 97%, 53%);
 }
 main .answer {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -112,6 +110,28 @@ main .answer .info {
 main .answer .text {
   text-align: center;
   margin-bottom: 2em;
+}
+main .close {
+  display: none;
+}
+main input[type=radio] {
+  display: none;
+}
+main .select {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: hsl(0deg, 0%, 100%);
+  background-color: rgba(124, 135, 152, 0.1);
+  padding: 1em 1.4em;
+  border-radius: 50%;
+}
+main .select:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+main .select:checked {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(217deg, 12%, 63%);
 }
 
 footer {

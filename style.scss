@@ -23,12 +23,10 @@ body {
 }
 
 main {
-	.container {
-		display: block;
-	}
 	.container,
 	.answer {
 		position: relative;
+		display: block;
 		background-color: $Dark-blue;
 		border-radius: 10px;
 		padding: 2em 2.5em;
@@ -87,7 +85,7 @@ main {
 		}
 	}
 	.answer {
-		display: none;
+		display: flex;
 		flex-direction: column;
 		align-items: center;
 
@@ -106,6 +104,28 @@ main {
 			text-align: center;
 			margin-bottom: 2em;
 		}
+	}
+	.close {
+		display: none;
+	}
+	input[type='radio'] {
+		display: none;
+	}
+	.select {
+		cursor: pointer;
+		font-size: 1.5rem;
+		color: $White;
+		background-color: rgba(124, 135, 152, 0.1);
+		padding: 1em 1.4em;
+		border-radius: 50%;
+	}
+	.select:hover {
+		background-color: $Orange;
+		color: $White;
+	}
+	.select:checked {
+		color: $White;
+		background-color: $Light-grey;
 	}
 }
 footer {
