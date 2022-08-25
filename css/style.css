@@ -21,6 +21,19 @@ body {
   transform: translate(-50%, -50%);
 }
 
+main .star {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(124, 135, 152, 0.1);
+  border-radius: 50px;
+}
+main .star svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 main .container,
 main .answer {
   position: relative;
@@ -126,12 +139,12 @@ main .select {
   border-radius: 50%;
 }
 main .select:hover {
-  background-color: hsl(25deg, 97%, 53%);
-  color: hsl(0deg, 0%, 100%);
-}
-main .select:checked {
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(217deg, 12%, 63%);
+}
+main .select:active {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
 }
 
 footer {

@@ -23,6 +23,20 @@ body {
 }
 
 main {
+	.star {
+		position: relative;
+		width: 40px;
+		height: 40px;
+		background-color: rgba(124, 135, 152, 0.1);
+		border-radius: 50px;
+		svg{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			
+		}
+	}
 	.container,
 	.answer {
 		position: relative;
@@ -119,13 +133,14 @@ main {
 		padding: 1em 1.4em;
 		border-radius: 50%;
 	}
+
 	.select:hover {
-		background-color: $Orange;
-		color: $White;
-	}
-	.select:checked {
 		color: $White;
 		background-color: $Light-grey;
+	}
+	.select:active {
+		background-color: $Orange;
+		color: $White;
 	}
 }
 footer {
