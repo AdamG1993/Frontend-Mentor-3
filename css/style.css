@@ -63,17 +63,6 @@ main .answer .btn-box {
   justify-content: space-around;
   justify-self: center;
 }
-main .container button,
-main .answer button {
-  background-color: rgba(124, 135, 152, 0.1);
-  color: hsl(217deg, 12%, 63%);
-  border-radius: 50%;
-  font-size: 1.5rem;
-  padding: 1em 1.4em;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-}
 main .container button:hover,
 main .answer button:hover {
   background-color: rgba(124, 135, 152, 0.4);
@@ -94,6 +83,9 @@ main .answer .sumbit {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
+  padding: 1em 1.4em;
+  border: none;
+  cursor: pointer;
 }
 main .container .sumbit:hover,
 main .answer .sumbit:hover {
@@ -148,6 +140,7 @@ main .btn-box input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  cursor: pointer;
 }
 main .btn-box input:hover {
   background-color: hsl(217deg, 12%, 63%);
