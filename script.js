@@ -5,10 +5,12 @@ const inputs = document.querySelectorAll('input')
 const spanRate = document.querySelector('.rate-info')
 let rate
 const handleActive = () => {
-	firstSide.classList.add('close')
-	secondSide.classList.remove('close')
+	if (spanRate.textContent === '') {
+	} else {
+		firstSide.classList.add('close')
+		secondSide.classList.remove('close')
+	}
 }
-
 btnSumbit.addEventListener('click', handleActive)
 
 inputs.forEach(input => {
