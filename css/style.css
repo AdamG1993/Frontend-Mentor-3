@@ -127,22 +127,33 @@ main .answer .text {
 main .close {
   display: none;
 }
-main input[type=radio] {
-  display: none;
+main .btn-box {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
-main .select {
-  cursor: pointer;
-  font-size: 1.5rem;
+main .btn-box .select {
+  position: relative;
+  font-size: 2rem;
   color: hsl(0deg, 0%, 100%);
+  z-index: 1;
+  left: -1.6em;
+  top: 0.1em;
+}
+main .btn-box input {
+  width: 50px;
+  height: 50px;
   background-color: rgba(124, 135, 152, 0.1);
-  padding: 1em 1.4em;
   border-radius: 50%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
-main .select:hover {
-  color: hsl(0deg, 0%, 100%);
+main .btn-box input:hover {
   background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
 }
-main .select:active {
+main .btn-box input:checked {
   background-color: hsl(25deg, 97%, 53%);
   color: hsl(0deg, 0%, 100%);
 }
@@ -151,4 +162,8 @@ footer {
   margin-top: 2em;
   text-align: center;
   color: white;
+}
+footer a {
+  text-decoration: none;
+  color: hsl(25deg, 97%, 53%);
 }/*# sourceMappingURL=style.css.map */
